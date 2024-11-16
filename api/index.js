@@ -2,6 +2,10 @@ const express = require("express");
 const axios = require("axios");
 const fs = require("fs");
 const path = require("path");
+const cors = require("cors");
+
+app.use(cors({origin: 'https://etkin-kinik-web-app.vercel.app/', methods: ['GET','POST','DELETE','PUT','PATCH']})
+);
 
 const app = express();
 
