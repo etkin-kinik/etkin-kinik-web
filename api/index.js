@@ -20,7 +20,7 @@ const getGoldPrice = async () => {
     try{
         const response = await axios.get("https://www.goldapi.io/api/XAU/USD", {
             headers: {
-                "x-access-token": "goldapi-5rnqdsm3izv0zy-io"
+                "x-access-token": "goldapi-1xrw2d7sm3kicvnm-io"
             }
         });
         return response.data.price;
